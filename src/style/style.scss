@@ -1,0 +1,65 @@
+$backgroundBody: #001100;
+$text: #fff;
+$linesColor: #003B00;
+$choosedCipher: #43174B;
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: $backgroundBody;
+    color: $text;
+    textarea {
+        margin-top: 3rem;
+        border: 0;
+        width: 100vw;
+        height: 18rem;
+        padding: .2rem .3rem .2rem .3rem;
+    }
+    
+}
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border: 2px solid $linesColor;
+    .cipher {
+        
+        height: 2.5rem;
+        width: 9rem;
+        background: #00FF00;
+        border: 2px solid $linesColor;
+        margin: 0 auto;
+        cursor: pointer;
+        option {
+            cursor: pointer;
+            margin: .2rem;
+        }
+    }
+}
+
+main {
+    .code-btns {
+    display: flex;
+    justify-content: center;
+
+        .code-btn {
+            cursor: pointer;
+            background: none;
+            border: 2px solid $linesColor;
+            color: $text;
+            width: 7rem;
+            height: 2rem;
+            margin: 2rem 0 0 1rem;
+        }
+    }
+}
