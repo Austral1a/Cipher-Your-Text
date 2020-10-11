@@ -1,5 +1,5 @@
 interface CipherConstructor {
-    (_input: string, _output: string): ICipher
+    new (_input: string, _output: string): ICipher
 }
 
 interface ICipher {
