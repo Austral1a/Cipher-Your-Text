@@ -57,4 +57,20 @@ const Cipher: CipherConstructor = class Cipher implements ICipher {
         this._output = newOutput
     }
 
+    encode() {
+        let newOutput: string = ''
+        this._input.toLowerCase().split('').forEach((e) => {
+            if(this.alphabetRU[e]) {
+                newOutput += this.alphabetRU[e]
+            } else {
+                newOutput += e
+            }
+        })
+        this.output = newOutput
+        return this.output
+    }
+
+    decode() {
+        return this._input
+    }
 }
